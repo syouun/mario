@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SMB 再現 フェーズ1</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #111; color: #ddd; }
+  body { display: flex; align-items: center; justify-content: center; gap: 12px; overflow: hidden; }
+  #screen {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    background: #000;
+    flex: none;
+  }
+  #debug {
+    margin: 0; padding: 8px 10px; flex: none; width: 400px; box-sizing: border-box;
+    font: 12px/1.4 Consolas, "MS Gothic", monospace;
+    background: #1c2228; color: #cfe; border-radius: 4px;
+    white-space: pre; overflow: hidden;
+  }
+</style>
+</head>
+<body>
+<canvas id="screen" width="256" height="240"></canvas>
+<pre id="debug"></pre>
+
+<!-- ビルド不要。file:// でも動くよう、ES Modules ではなく通常の script を順に読む -->
+<script src="js/constants.js"></script>
+<script src="js/config.js"></script>
+<script src="js/input.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/sounds.js"></script>
+<script src="music/overworld.js"></script>
+<script src="music/underground.js"></script>
+<script src="music/castle.js"></script>
+<script src="music/water.js"></script>
+<script src="music/star.js"></script>
+<script src="music/jingles.js"></script>
+<script src="levels/level_1-1.js"></script>
+<script src="levels/level_test.js"></script>
+<script src="levels/level_1-2.js"></script>
+<script src="levels/level_1-3.js"></script>
+<script src="levels/level_1-4.js"></script>
+<script src="levels/level_2-1.js"></script>
+<script src="levels/level_2-2.js"></script>
+<script src="levels/level_2-3.js"></script>
+<script src="levels/level_2-4.js"></script>
+<script src="levels/level_3-1.js"></script>
+<script src="levels/level_3-2.js"></script>
+<script src="levels/level_3-3.js"></script>
+<script src="levels/level_3-4.js"></script>
+<script src="levels/level_4-1.js"></script>
+<script src="levels/level_4-2.js"></script>
+<script src="levels/level_4-3.js"></script>
+<script src="levels/level_4-4.js"></script>
+<script src="levels/level_5-1.js"></script>
+<script src="levels/level_5-2.js"></script>
+<script src="levels/level_5-3.js"></script>
+<script src="levels/level_5-4.js"></script>
+<script src="levels/level_6-1.js"></script>
+<script src="levels/level_6-2.js"></script>
+<script src="levels/level_6-3.js"></script>
+<script src="levels/level_6-4.js"></script>
+<script src="levels/level_7-1.js"></script>
+<script src="levels/level_7-2.js"></script>
+<script src="levels/level_7-3.js"></script>
+<script src="levels/level_7-4.js"></script>
+<script src="levels/level_8-1.js"></script>
+<script src="levels/level_8-2.js"></script>
+<script src="levels/level_8-3.js"></script>
+<script src="levels/level_8-4.js"></script>
+<script src="js/level.js"></script>
+<script src="js/camera.js"></script>
+<script src="js/player.js"></script>
+<script src="js/blocks.js"></script>
+<script src="js/enemies.js"></script>
+<script src="js/fireballs.js"></script>
+<script src="js/lifts.js"></script>
+<script src="js/vines.js"></script>
+<script src="js/sprite_sheet.js"></script>
+<script src="js/sprites.js"></script>
+<script src="js/renderer.js"></script>
+<script src="js/debug.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
